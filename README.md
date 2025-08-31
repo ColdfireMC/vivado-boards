@@ -4,7 +4,7 @@ This repository contains the files used by Vivado IP Integrator to support Digil
 
 The `old` folder is for use with Vivado versions 2014.4 and below. The `new` folder covers Vivado 2015.x and above.
 
-Installation instructions for the `new` files can be found in [Section 3](https://digilent.com/reference/programmable-logic/guides/installing-vivado-and-vitis#install_digilent_s_board_files) of the *Installing Vivado, Vitis, and Digilent Board Files* guide on Digilent Refeernce.
+Installation instructions for the `new` files can be found in [Section 3](https://digilent.com/reference/programmable-logic/guides/installing-vivado-and-vitis#install_digilent_s_board_files) of the *Installing Vivado, Vitis, and Digilent Board Files* guide on Digilent Reference.
 
 Installation instructions for the `old` files can be found in the [Installing Vivado Board Files for Digilent Boards (Legacy)](https://digilent.com/reference/vivado/boardfiles) guide on the Digilent Wiki.
 
