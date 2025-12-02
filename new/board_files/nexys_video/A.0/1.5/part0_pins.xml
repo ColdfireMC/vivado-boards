@@ -35,7 +35,7 @@ SOFTWARE.
   <pin index="8"   name ="dip_switches_8bits_tri_i_7" iostandard="LVCMOS33" loc="M17"/>
   <pin index="9"   name ="eth_mdc"                    iostandard="LVCMOS25" loc="AA16"/>
   <pin index="10"  name ="eth_mdio_i"                 iostandard="LVCMOS25" loc="Y16"/>
-  <pin index="11"  name ="eth_rst"                    iostandard="LVCMOS33" loc="U7"/>
+  <pin index="11"  name ="phy_reset_n"                    iostandard="LVCMOS33" loc="U7"/>
   <pin index="12"  name ="eth_rxd_0"                  iostandard="LVCMOS25" loc="AB16"/>
   <pin index="13"  name ="eth_rxd_1"                  iostandard="LVCMOS25" loc="AA15"/>
   <pin index="14"  name ="eth_rxd_2"                  iostandard="LVCMOS25" loc="AB15"/>
@@ -66,22 +66,20 @@ SOFTWARE.
   <pin index="39"  name ="qspi_db1_i"                 iostandard="LVCMOS33" loc="R22"/>
   <pin index="40"  name ="qspi_db2_i"                 iostandard="LVCMOS33" loc="P21"/>
   <pin index="41"  name ="qspi_db3_i"                 iostandard="LVCMOS33" loc="R21"/>
-  <pin index="42"  name ="cpu_resetn"                 iostandard="LVCMOS15" loc="G4"/>
-  <pin index="43"  name ="usb_uart_rxd"               iostandard="LVCMOS33" loc="V18"/>
-  <pin index="44"  name ="usb_uart_txd"               iostandard="LVCMOS33" loc="AA19"/>
-  <pin index="45"  name ="phy_reset_n"                iostandard="LVCMOS33" loc="U7"/>
-  <pin index="47"  name ="TMDS_IN_CLK"                iostandard="TMDS_33" loc="V4"/>
-  <pin index="48"  name ="TMDS_IN_CLK_N"              iostandard="TMDS_33" loc="W4"/>
-  <pin index="49"  name ="TMDS_IN_DATA_0"             iostandard="TMDS_33" loc="Y3"/>
-  <pin index="50"  name ="TMDS_IN_DATA_1"             iostandard="TMDS_33" loc="W2"/>
-  <pin index="51"  name ="TMDS_IN_DATA_2"             iostandard="TMDS_33" loc="U2"/>
-  <pin index="52"  name ="TMDS_IN_DATA_N_0"           iostandard="TMDS_33" loc="AA3"/>
-  <pin index="53"  name ="TMDS_IN_DATA_N_1"           iostandard="TMDS_33" loc="Y2"/>
-  <pin index="54"  name ="TMDS_IN_DATA_N_2"           iostandard="TMDS_33" loc="V2"/>
-  <pin index="64"  name ="hdmi_in_ddc_scl"            iostandard="LVCMOS33" loc="Y4"/>
-  <pin index="65"  name ="hdmi_in_ddc_sda"            iostandard="LVCMOS33" loc="AB5"/>
-  <pin index="55"  name ="hdmi_tx_hpd"                iostandard="LVCMOS33" loc="AB13"/>
-  <pin index="46"  name ="hdmi_rx_hpd"                iostandard="LVCMOS33" loc="AB12"/>
+  <pin index="42"  name ="usb_uart_rxd"               iostandard="LVCMOS33" loc="V18"/>
+  <pin index="43"  name ="usb_uart_txd"               iostandard="LVCMOS33" loc="AA19"/>
+  <pin index="44"  name ="hdmi_in_ddc_scl"            iostandard="LVCMOS33" loc="Y4"/>
+  <pin index="45"  name ="hdmi_in_ddc_sda"            iostandard="LVCMOS33" loc="AB5"/>
+  <pin index="46"  name ="TMDS_IN_CLK"                iostandard="TMDS_33" loc="V4"/>
+  <pin index="47"  name ="TMDS_IN_CLK_N"              iostandard="TMDS_33" loc="W4"/>
+  <pin index="48"  name ="TMDS_IN_DATA_0"             iostandard="TMDS_33" loc="Y3"/>
+  <pin index="49"  name ="TMDS_IN_DATA_1"             iostandard="TMDS_33" loc="W2"/>
+  <pin index="50"  name ="TMDS_IN_DATA_2"             iostandard="TMDS_33" loc="U2"/>
+  <pin index="51"  name ="TMDS_IN_DATA_N_0"           iostandard="TMDS_33" loc="AA3"/>
+  <pin index="52"  name ="TMDS_IN_DATA_N_1"           iostandard="TMDS_33" loc="Y2"/>
+  <pin index="53"  name ="TMDS_IN_DATA_N_2"           iostandard="TMDS_33" loc="V2"/>
+  <pin index="54"  name ="hdmi_tx_hpd"                iostandard="LVCMOS33" loc="AB13"/>
+  <pin index="55"  name ="hdmi_rx_hpd"                iostandard="LVCMOS33" loc="AB12"/>
   <pin index="56"  name ="TMDS_OUT_CLK"               iostandard="TMDS_33" loc="T1"/>
   <pin index="57"  name ="TMDS_OUT_CLK_N"             iostandard="TMDS_33" loc="U1"/>
   <pin index="58"  name ="TMDS_OUT_DATA_0"            iostandard="TMDS_33" loc="W1"/>
@@ -288,6 +286,7 @@ SOFTWARE.
   <pin index="259" name ="ps2_clk"         iostandard="LVCMOS33"               loc ="W17"/>
   <pin index="260" name ="ps2_data"        iostandard="LVCMOS33"               loc ="N13"/>
   <pin index="261" name ="fan_pwm"         iostandard="LVCMOS33"               loc ="U15"/>
+  <pin index="262"  name ="cpu_resetn"                 iostandard="LVCMOS15" loc="G4"/>
 </pins>	     
 <design_constrs>
   <internal_vref bank_id="35" voltage="0.750"/> 
